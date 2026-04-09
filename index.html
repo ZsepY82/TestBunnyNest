@@ -1,83 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bunny Nest LLC</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="google-site-verification" content="5T_DUXncVf-V7iSRfcYEjohZPpkpBGQRiDGGv3_CYog" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bunny Nest LLC</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="google-site-verification" content="5T_DUXncVf-V7iSRfcYEjohZPpkpBGQRiDGGv3_CYog" />
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.intro {
+    font-size: 18px;
+    color: #333;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 25px 0;
+}
+
+.description {
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-section {
+    margin-top: 30px;
+}
+
+.location {
+    font-size: 14px;
+    color: #777;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.call-btn {
+    background: #22c55e;
+    color: white;
+}
+
+.call-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.fb-btn {
+    background: #1877f2;
+    color: white;
+}
+
+.fb-btn:hover {
+    transform: translateY(-2px);
+}
+
+.business-email a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.form-section {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.form-section h3 {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #333;
+}
+
+#formMessage {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+/* REFERENCES SECTION */
+.references {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.references h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reference-card {
+    background: #f9fafb;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.reference-name {
+    font-weight: 600;
+}
+
+.reference-contact {
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
-    <h1>🔧 Bunny Nest LLC</h1>
-    <h2>Reliable Handyman Services You Can Trust</h2>
-    
-    <p class="intro">
-        No need to keep looking — you've found the right team.
-    </p>
 
-    <img src="imgs/services.jpg" alt="Services We Offer">
+<h1>🔧 Bunny Nest LLC</h1>
+<h2>Reliable Handyman Services You Can Trust</h2>
 
-    <p class="description">
-        We provide high-quality handyman services including repairs, maintenance,
-        and home improvement. Fast, affordable, and done right the first time.
-    </p>
+<p class="intro">No need to keep looking — you've found the right team.</p>
 
-    <!-- CONTACT BUTTONS -->
-    <div class="contact-section">
-        <p class="location">
-            📍 Serving Largo, FL 33771 and surrounding areas
-        </p>
+<img src="imgs/services.jpg" alt="Services We Offer">
 
-        <a href="tel:17279002170" class="btn call-btn">
-            📞 Call (727) 900-2170
-        </a>
+<p class="description">
+We provide high-quality handyman services including repairs, maintenance, and home improvement.
+Fast, affordable, and done right the first time.
+</p>
 
-        <a href="https://www.facebook.com/profile.php?id=61579316041970" target="_blank" class="btn fb-btn">
-            👍 Visit our Facebook
-        </a>
+<div class="contact-section">
+<p class="location">📍 Serving Largo, FL and surrounding areas</p>
 
-        <p class="business-email">
-            📧 Email us: <a href="mailto:youremail@example.com">youremail@example.com</a>
-        </p>
-    </div>
+<a href="tel:17279002170" class="btn call-btn">📞 Call (727) 900-2170</a>
 
-    <!-- CONTACT FORM -->
-    <div class="form-section">
-        <h3>Request a Quote</h3>
+<a href="https://www.facebook.com/profile.php?id=61579316041970" target="_blank" class="btn fb-btn">👍 Visit our Facebook</a>
 
-       <form action="https://formspree.io/f/mqegnjjg" method="POST" id="contactForm">
+<p class="business-email">
+📧 Email us: <a href="mailto:youremail@example.com">youremail@example.com</a>
+</p>
+</div>
 
-    <input type="text" name="firstName" placeholder="First Name" required>
-    <input type="text" name="lastName" placeholder="Last Name" required>
+<div class="form-section">
+<h3>Request a Quote</h3>
 
-    <input type="tel" name="phone" id="phone" placeholder="Phone Number">
-    <input type="email" name="email" id="email" placeholder="Email Address">
+<form action="https://formspree.io/f/mqegnjjg" method="POST" id="contactForm">
+<input type="text" name="firstName" placeholder="First Name" required>
+<input type="text" name="lastName" placeholder="Last Name" required>
+<input type="tel" name="phone" id="phone" placeholder="Phone Number">
+<input type="email" name="email" id="email" placeholder="Email Address">
 
-    <button type="submit">Submit Request</button>
-    <input type="hidden" name="_subject" value="New Bunny Nest LLC Request">
+<button type="submit">Submit Request</button>
+<input type="hidden" name="_subject" value="New Bunny Nest LLC Request">
 </form>
 
 <p id="formMessage"></p>
+</div>
 
-        <p id="formMessage"></p>
-    </div>
+<!-- BEFORE & AFTER GALLERY -->
+<div class="references">
+<h3>Our Work (Before & After)</h3>
+
+<div class="reference-card">
+<p class="reference-name">Bathroom Remodel</p>
+<img src="imgs/before1.jpg" alt="Before Work" style="width:100%; margin-top:10px; border-radius:8px;">
+<img src="imgs/after1.jpg" alt="After Work" style="width:100%; margin-top:10px; border-radius:8px;">
+</div>
+
+<div class="reference-card">
+<p class="reference-name">Kitchen Repair</p>
+<img src="imgs/before2.jpg" alt="Before Work" style="width:100%; margin-top:10px; border-radius:8px;">
+<img src="imgs/after2.jpg" alt="After Work" style="width:100%; margin-top:10px; border-radius:8px;">
+</div>
+
+<!-- Duplicate these blocks for more jobs -->
 
 </div>
 
-<!-- SIMPLE VALIDATION -->
+</div>
+
 <script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+const form = document.getElementById("contactForm");
+const message = document.getElementById("formMessage");
+
+form.addEventListener("submit", function(e) {
     const phone = document.getElementById("phone").value.trim();
     const email = document.getElementById("email").value.trim();
 
     if (!phone && !email) {
         e.preventDefault();
-        document.getElementById("formMessage").style.color = "red";
-        document.getElementById("formMessage").textContent = 
-            "Please enter either a phone number or an email.";
+        message.className = "error";
+        message.textContent = "Please enter a phone number or email.";
+        return;
     }
+
+    message.className = "success";
+    message.textContent = "Sending...";
 });
 </script>
 
