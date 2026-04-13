@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bunny Nest LLC</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<meta name="google-site-verification" content="5T_DUXncVf-V7iSRfcYEjohZPpkpBGQRiDGGv3_CYog" />
 
 <style>
 body {
@@ -14,6 +14,39 @@ body {
     background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
 }
 
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    z-index: 999;
+}
+
+header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.nav-buttons a {
+    margin-left: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.nav-call { background: #22c55e; color: white; }
+.nav-fb { background: #1877f2; color: white; }
+.nav-quote { background: black; color: white; }
+.nav-video { background: #f97316; color: white; }
+
+/* MAIN */
 .container {
     max-width: 900px;
     margin: 40px auto;
@@ -24,20 +57,17 @@ body {
     text-align: center;
 }
 
-h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
-}
-
-h2 {
-    color: #666;
-    font-weight: 400;
-    margin-bottom: 25px;
-}
+h1 { font-size: 32px; margin-bottom: 5px; }
+h2 { color: #666; font-weight: 400; margin-bottom: 25px; }
 
 .intro {
     font-size: 18px;
     color: #333;
+}
+
+.description {
+    color: #555;
+    line-height: 1.6;
 }
 
 img {
@@ -46,61 +76,10 @@ img {
     margin: 25px 0;
 }
 
-.description {
-    color: #555;
-    line-height: 1.6;
-}
-
-.contact-section {
-    margin-top: 30px;
-}
-
-.location {
-    font-size: 14px;
-    color: #777;
-}
-
-.btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 14px 22px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.25s ease;
-}
-
-.call-btn {
-    background: #22c55e;
-    color: white;
-}
-
-.call-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.fb-btn {
-    background: #1877f2;
-    color: white;
-}
-
-.fb-btn:hover {
-    transform: translateY(-2px);
-}
-
-.business-email a {
-    color: #1877f2;
-    text-decoration: none;
-}
-
+/* FORM */
 .form-section {
     margin-top: 40px;
     text-align: left;
-}
-
-.form-section h3 {
-    text-align: center;
 }
 
 form {
@@ -115,11 +94,6 @@ input {
     font-size: 14px;
 }
 
-input:focus {
-    outline: none;
-    border-color: #1877f2;
-}
-
 button {
     padding: 14px;
     border: none;
@@ -128,145 +102,194 @@ button {
     color: white;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.2s;
 }
 
-button:hover {
-    background: #333;
-}
-
-#formMessage {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.success {
-    color: green;
-}
-
-.error {
-    color: red;
-}
-
-/* REFERENCES SECTION */
+/* GALLERY */
 .references {
     margin-top: 50px;
     text-align: left;
 }
 
-.references h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .reference-card {
     background: #f9fafb;
-    padding: 15px 20px;
+    padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-.reference-name {
+/* VIDEO */
+.video-section {
+    margin-top: 60px;
+}
+
+.video-box {
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/* FAQ */
+.faq {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.faq-item {
+    background: #f1f5f9;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.faq-question {
+    padding: 15px;
+    cursor: pointer;
     font-weight: 600;
+    background: #e2e8f0;
 }
 
-.reference-contact {
-    font-size: 14px;
+.faq-answer {
+    display: none;
+    padding: 15px;
     color: #555;
 }
 
+/* FOOTER BAR */
+.footer-bar {
+    position: sticky;
+    bottom: 0;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    font-size: 13px;
+}
+
+.footer-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* MOBILE */
 @media (max-width: 600px) {
-    .container {
-        padding: 25px;
-    }
+    .container { padding: 25px; }
+    iframe { height: 220px; }
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+<header>
+    <h3>🔧 Bunny Nest LLC</h3>
+    <div class="nav-buttons">
+        <a class="nav-call" href="tel:17279002170">Call</a>
+        <a class="nav-quote" href="#quote">Quote</a>
+        <a class="nav-video" href="#video">Video</a>
+        <a class="nav-fb" href="https://www.facebook.com/profile.php?id=61579316041970" target="_blank">Facebook</a>
+    </div>
+</header>
+
 <div class="container">
 
 <h1>🔧 Bunny Nest LLC</h1>
 <h2>Reliable Handyman Services You Can Trust</h2>
 
-<p class="intro">No need to keep looking — you've found the right team.</p>
+<p class="intro">Fast, affordable, and done right the first time.</p>
 
-<img src="imgs/services.jpg" alt="Services We Offer">
+<img src="imgs/services.jpg">
 
 <p class="description">
 We provide high-quality handyman services including repairs, maintenance, and home improvement.
-Fast, affordable, and done right the first time.
 </p>
 
-<div class="contact-section">
-<p class="location">📍 Serving Largo, FL and surrounding areas</p>
-
-<a href="tel:17279002170" class="btn call-btn">📞 Call (727) 900-2170</a>
-
-<a href="https://www.facebook.com/profile.php?id=61579316041970" target="_blank" class="btn fb-btn">👍 Visit our Facebook</a>
-
-<p class="business-email">
-📧 Email us: <a href="mailto:youremail@example.com">youremail@example.com</a>
-</p>
-</div>
-
-<div class="form-section">
+<!-- FORM -->
+<div id="quote" class="form-section">
 <h3>Request a Quote</h3>
 
-<form action="https://formspree.io/f/mqegnjjg" method="POST" id="contactForm">
+<form action="https://formspree.io/f/mqegnjjg" method="POST">
 <input type="text" name="firstName" placeholder="First Name" required>
 <input type="text" name="lastName" placeholder="Last Name" required>
-<input type="tel" name="phone" id="phone" placeholder="Phone Number">
-<input type="email" name="email" id="email" placeholder="Email Address">
-
+<input type="tel" name="phone" placeholder="Phone Number">
+<input type="email" name="email" placeholder="Email Address">
 <button type="submit">Submit Request</button>
-<input type="hidden" name="_subject" value="New Bunny Nest LLC Request">
 </form>
-
-<p id="formMessage"></p>
 </div>
 
-<!-- BEFORE & AFTER GALLERY -->
+<!-- BEFORE & AFTER -->
 <div class="references">
-<h3>Our Work (Before & After)</h3>
+<h3>Our Work</h3>
 
 <div class="reference-card">
-<p class="reference-name">Bathroom Remodel</p>
-<img src="imgs/before1.jpg" alt="Before Work" style="width:100%; margin-top:10px; border-radius:8px;">
-<img src="imgs/after1.jpg" alt="After Work" style="width:100%; margin-top:10px; border-radius:8px;">
+<p><b>Bathroom Remodel</b></p>
+<img src="imgs/before1.jpg">
+<img src="imgs/after1.jpg">
 </div>
 
 <div class="reference-card">
-<p class="reference-name">Kitchen Repair</p>
-<img src="imgs/before2.jpg" alt="Before Work" style="width:100%; margin-top:10px; border-radius:8px;">
-<img src="imgs/after2.jpg" alt="After Work" style="width:100%; margin-top:10px; border-radius:8px;">
+<p><b>Kitchen Repair</b></p>
+<img src="imgs/before2.jpg">
+<img src="imgs/after2.jpg">
+</div>
 </div>
 
-<!-- Duplicate these blocks for more jobs -->
+<!-- VIDEO -->
+<div id="video" class="video-section">
+<h2>🎥 Promotional Video</h2>
+
+<div class="video-box">
+<iframe 
+src="imgs/promotional-vid.mp4" 
+frameborder="0" 
+allowfullscreen>
+</iframe>
+</div>
+</div>
+
+<!-- FAQ -->
+<div id="faq" class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<div class="faq-question">How fast can you come out?</div>
+<div class="faq-answer">Usually same-day or next-day depending on availability.</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Do you give free estimates?</div>
+<div class="faq-answer">Yes — all quotes are free.</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">What areas do you serve?</div>
+<div class="faq-answer">We serve Largo, FL and surrounding areas.</div>
+</div>
 
 </div>
 
+</div>
+
+<!-- FOOTER BAR -->
+<div class="footer-bar">
+    <a href="#faq">❓ FAQ</a>
+    <a href="#quote">💬 Quote</a>
+    <a href="#video">🎥 Video</a>
+    <a href="mailto:youremail@example.com">📧 Email</a>
 </div>
 
 <script>
-const form = document.getElementById("contactForm");
-const message = document.getElementById("formMessage");
-
-form.addEventListener("submit", function(e) {
-    const phone = document.getElementById("phone").value.trim();
-    const email = document.getElementById("email").value.trim();
-
-    if (!phone && !email) {
-        e.preventDefault();
-        message.className = "error";
-        message.textContent = "Please enter a phone number or email.";
-        return;
-    }
-
-    message.className = "success";
-    message.textContent = "Sending...";
+document.querySelectorAll(".faq-question").forEach(q => {
+    q.addEventListener("click", () => {
+        const ans = q.nextElementSibling;
+        ans.style.display = ans.style.display === "block" ? "none" : "block";
+    });
 });
 </script>
 
